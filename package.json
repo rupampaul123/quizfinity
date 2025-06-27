@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rupampaul123.github.io/quizfinity",
   "name": "quiz",
   "private": true,
   "version": "0.0.0",
@@ -6,8 +7,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
+    "lint": "eslint .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "postinstall": "flowbite-react patch"
   },
   "dependencies": {
@@ -16,8 +19,8 @@
     "@mui/icons-material": "^7.1.2",
     "@mui/joy": "^5.0.0-beta.52",
     "@mui/material": "^7.1.2",
-    "@tailwindcss/vite": "^4.1.10",
-    "flowbite-react": "^0.11.8",
+    "flowbite": "^3.1.2",
+    "flowbite-react": "^0.10.0",
     "framer-motion": "^12.19.1",
     "gh-pages": "^6.3.0",
     "gsap": "^3.13.0",
@@ -28,7 +31,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
-    "@tailwindcss/postcss": "^4.1.10",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.1",
@@ -38,7 +40,7 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.10",
+    "tailwindcss": "^3.4.3",
     "vite": "^6.3.5"
   }
 }

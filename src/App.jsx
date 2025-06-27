@@ -1,11 +1,11 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, createHashRouter } from 'react-router-dom';
 import './App.css'
 import Landing from './components/landing'
 import Layout from './layout'
 import Categories from './components/categories';
 import Quiz from './components/quiz';
 function App() {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: <Layout/>,
@@ -25,7 +25,8 @@ function App() {
       ]
     }
 
-  ])
+  ],
+)
   return (
     <>
      <RouterProvider router={router} />
