@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider, createHashRouter } from 'react-router-dom';
 import './App.css'
-import Landing from './components/landing'
+import Landing from './components/Landing'
 import Layout from './layout'
 import Categories from './components/categories';
 import Quiz from './components/quiz';
