@@ -10,10 +10,10 @@ export default function Footer1() {
         <div className="grid w-full grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
           <div>
             <FooterTitle title="Contact Us" />
-            <FooterLinkGroup row>
-              <FooterLink href="https://github.com/rupampaul123">Github</FooterLink>
-              <FooterLink href="https://www.instagram.com/rupampaul_/">Instagram</FooterLink>
-              <FooterLink href="https://www.linkedin.com/in/rupam-paul-bag-66bb3b307/">LinkedIn</FooterLink>
+            <FooterLinkGroup row style={{gap:"10px"}} >
+              <FooterLink href="https://github.com/rupampaul123">Github </FooterLink>
+              <FooterLink href="https://www.instagram.com/rupampaul_/">Instagram </FooterLink>
+              <FooterLink href="https://www.linkedin.com/in/rupam-paul-bag-66bb3b307/">LinkedIn </FooterLink>
             </FooterLinkGroup>
           </div>
         </div>
